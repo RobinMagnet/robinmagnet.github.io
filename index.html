@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Robin Magnet</title>
+
+    <link rel="stylesheet" href="./resources/main.css">
+    <link href="./resources/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/612029af5a.js" crossorigin="anonymous"></script>
+    <style>
+      .collapsible {
+        cursor: pointer;
+      }
+      .content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+      }
+      img {
+            width: 100%;
+            height: 100%;
+        }
+      </style>
+  </head>
+<body>
+  <section id="top">
+    <div style="border-bottom: 1px solid darkGrey;">
+      <div class="row mx-auto my-2 w-75" >
+        <div class="nav-item active pr-3">
+          <a class="nav-link" href="#presentation" style="color: black;">Bio</a>
+        </div>
+        <div class="nav-item active pr-3">
+          <a class="nav-link" href="#research" style="color: black;">Research</a>
+        </div>
+        <div class="nav-item active pr-3">
+          <a class="nav-link" href="#code" style="color: black;">Code</a>
+        </div>
+        <div class="nav-item active">
+          <a class="nav-link" href="./resources/CV.pdf" style="color: black;">CV</a>
+        </div>
+      </div>
+    </div>
+      <!-- <nav class="navbar navbar-light bg-light navbar-expand" style="border-bottom: 1px solid darkGrey;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto p-1 w-25">
+            <li class="nav-item active pr-3">
+              <a class="nav-link" href="#presentation">Bio</a>
+            </li>
+            <li class="nav-item active pr-3">
+              <a class="nav-link" href="#research">Research</a>
+            </li>
+            <li class="nav-item active pr-3">
+              <a class="nav-link" href="#code" >Code</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./resources/CV.pdf">CV</a>
+            </li>
+          </ul>
+        </div>
+      </nav> -->
+  </section>
+
+  <div class="container w-75 mb-5">
+    <section id="presentation" style="margin-top:80px">
+      <div class="row">
+        <div class="col pb-4">
+          <div class="text-center">
+            <!-- <img src="./resources/photo.png" class="img-thumbnail" style="max-height: 220px"> -->
+          </div>
+        </div>
+        <div class="col-10">
+          <h5>Robin Magnet</h5> <h6><em>Postdoc, Inria Paris</em></h6></p>
+          <!-- <p><em>I am currently interning at Meta Reality Labs in Pittsburgh</em> </p> -->
+          <p>I am a postdoc with <a href="https://www.jeanfeydy.com/" target="_blank">Jean Feydy</a>
+            in the <a href="https://team.inria.fr/heka/">Heka Team</a> at <a href="https://www.inria.fr/fr/centre-inria-de-paris">Inria Paris</a>.
+            Before that, I obtained my PhD under the supervision of <a href="http://www.lix.polytechnique.fr/~maks/" target="_blank">Maks Ovsjanikov</a>
+            at <a href="https://www.polytechnique.edu/en" target="_blank">&Eacute;cole Polytechnique</a> in France (in the <a href="https://team.inria.fr/geomerix/">GeomeriX Team</a> of the <a href="https://www.lix.polytechnique.fr/" target="_blank">LIX</a> laboratory).
+
+            <p></p>I have a master's degree in applied mathematics from <a href= "https://www.centralesupelec.fr/en" target="_blank"> Ecole Centrale Paris </a> and a master's degree in <a href="https://www.master-mva.com/" target="_blank">Mathematics, Vision and Learning</a> from <a href="https://ens-paris-saclay.fr/en" target="_blank">ENS Paris-Saclay</a>.</p>
+            <p> I am also the maintainer of the <a href="https://github.com/RobinMagnet/pyFM">pyfmaps</a> (pyFM) library,
+            which provides simple bindings for several powerful functional maps methods. </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="mb-2">
+            <a
+              href="https://github.com/RobinMagnet/"
+              target="_blank"
+              class="mr-2"
+              style="color: black; text-decoration: none;"
+            >
+              <i class="fa fa-github fa-xl" aria-hidden="true"></i>
+            </a>
+            <a href="https://scholar.google.com/citations?hl=en&user=t4_TpDQAAAAJ"
+              style="color: black; text-decoration: none;"
+              target="_blank"
+            >
+              <i class="fa-brands fa-google-scholar fa-xl" aria-hidden="true"></i>
+            </a>
+          </div>
+        <div>
+          Email : robin.magnet@inria.fr
+        </div>
+      </div>
+    </section>
+
+    <hr class="mt-5" />
+
+    <section id="news" class="mt-5">
+      <div class="row">
+        <div class="col pb-4"><h3>News</h3></div>
+        <div class="col-lg-10 col-sm-12">
+          <div>
+            <p>
+              I started a postdoc at Inria Paris in the <a href="https://team.inria.fr/heka/">Heka Team</a>.
+            </p>
+            <p>
+              I defended my <a href="PhD_thesis/PhD_Thesis.pdf" target="_blank"> PhD thesis !</a>
+            </p>
+            <p>
+              My package <em><a href="https://www.github.com/RobinMagnet/pyFM" target="_blank">PyFM</a></em> has been released on PyPI in version 1.0.0.
+            <p>
+              Our paper <em><a href="CVPR24_Memory/main.pdf" target="_blank">Scalable and Simplified Functional Map Learning</a></em> with Maks Ovsjanikov has been accepted at CVPR 2024.
+            <p>
+              I did a Research Scientist Internship at Meta Reality Labs in Pittsburgh
+            </p>
+            <p>
+              Our paper <em><a href="3DV2022_smooth_corres/JM23_trigonoFM.pdf" target="_blank">Assessing craniofacial growth and form without landmarks: A new automatic approach based on spectral methods</a></em> with Kevin Bloch, Maxime Taverne, Simone Melzi, Maya Geoffroy, Roman H. Khonsari and Maks Ovsjanikov has been published in the Journal of Morphology.
+            </p>
+
+          </div>
+        <a class="collapsible" style="color: #007bff;">see more</button>
+          <div class="content">
+            <p>
+              Our paper <em><a href="EG_large_mesh/scalable_FM_main.pdf" target="_blank">Scalable and Efficient Functional Map Computations on Dense Meshes</a></em> with Maks Ovsjanikov has been accepted at Eurographics 2023.
+            </p>
+            <p>
+            I starded a position of Teaching Assistant for class <a href="https://moodle.polytechnique.fr/course/view.php?id=14968">INF631 - Analysis and Deep Learning on Geometric Data (2022-2023)</a> at Ecole Polytechnique
+            </p>
+            <p>
+              I starded a position of Teaching Assistant for class <a href="https://moodle.polytechnique.fr/enrol/index.php?id=14254">INF573 - Image Analysis and Computer Vision (2022-2023)</a> at Ecole Polytechnique
+            </p>
+            <p>
+              Our paper <em><a href="3DV2022_smooth_corres/smooth_corres_main.pdf" target="_blank">Smooth Non-Rigid Shape Matching via Effective Dirichlet Energy Optimization</a></em> has received the <a href="https://3dvconf.github.io/2022/prizes/">best paper award</a> at 3DV 2022
+            </p>
+            <p>
+              Our paper <em><a href="3DV2022_smooth_corres/smooth_corres_main.pdf" target="_blank">Smooth Non-Rigid Shape Matching via Effective Dirichlet Energy Optimization</a></em> with Jing Ren, Olga Sorkine-Hornung and Maks Ovsjanikov has been accepted at 3DV 2022 as an <b>oral presentation</b>
+            </p>
+            <p>
+              I starded a position of Teaching Assistant for class <a href="https://moodle.polytechnique.fr/enrol/index.php?id=12211">INF473V - Modal d'informatique - Deep Learning in Computer Vision (2021-2022)</a> at Ecole Polytechnique
+            </p>
+            <p>
+              I starded a position of Teaching Assistant for class <a href="https://moodle.polytechnique.fr/course/info.php?name=INF573-2021">INF573 - Image Analysis and Computer Vision (2021-2022)</a> at Ecole Polytechnique
+            </p>
+            <p>
+              Our paper <em><a href="DWKS/DWKS.pdf" target="_blank">DWKS : A Local Descriptor of Deformations Between Meshes and Point Clouds</a></em> with Maks Ovsjanikov has been accepted at ICCV 2021
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="mt-5" />
+
+    <section id="research" class="mt-5">
+
+
+      <div class="row">
+        <div class="col pb-4"><h3>Research</h3></div>
+        <div class="col-lg-10 col-sm-12 justify-content-between">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-10 col-10 mb-5">
+              <img src="PhD_thesis/teaser.jpeg" class="img-thumbnail" style="scale:1.1" >
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-10 col-10">
+              <h6> Robust Spectral Methods for Shape Analysis and Deformation Assessment</h6>
+              <p>Robin Magnet<br />
+              <em>Ph.D. dissertation, Institut Polytechnique de Paris, 2024..</em> <br />
+              </p>
+              <p>
+              </p>
+              <p>
+                [<a href="PhD_thesis/PhD_Thesis.pdf" target="_blank">compressed</a>] [<a href="https://theses.hal.science/tel-04746798">pdf</a>]
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-10 col-10 mb-5">
+              <img src="CVPR24_Memory/teaser.jpg" class="img-thumbnail" style="scale:1.1" >
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-10 col-10">
+              <h6>Scalable and Simplified Functional Map Learning </h6>
+              <p>Robin Magnet, <a href="https://www.lix.polytechnique.fr/~maks/"> Maks Ovsjanikov</a><br />
+              <em>Proc. International Conference on Computer Vision and Pattern Recognition (CVPR), 2024.</em> <br />
+              </p>
+              <p>
+              </p>
+              <p>
+                [<a href="CVPR24_Memory/main.pdf" target="_blank">pdf</a>]
+                [<a href="CVPR24_Memory/supp.pdf" target="_blank">suppl</a>]
+                <a href="https://github.com/RobinMagnet/SimplifiedFmapsLearning" target="_blank" style="color: black;">
+                  <i class="fa fa-github fa-xl" aria-hidden="true"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-10 col-10 mb-5">
+              <img src="JM_TrigonoFM/JM23_trigonoFM_thumbnail.jpg" class="img-thumbnail" style="scale:1.1" >
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-10 col-10">
+              <h6>Assessing craniofacial growth and form without landmarks: A new automatic approach based on spectral methods </h6>
+              <p>Robin Magnet, Kevin Bloch, <a href="https://www.maximetaverne.fr/">Maxime Taverne</a>, <a href="https://sites.google.com/site/melzismn/">Simone Melzi</a>, Maya Geoffroy, <a href="https://www.institutimagine.org/fr/users/rkhonsari">Roman H. Khonsari</a>, <a href="https://www.lix.polytechnique.fr/~maks/"> Maks Ovsjanikov</a><br />
+              <em>Journal of Morphology, 2023</em> <br />
+              </p>
+              <p>
+              </p>
+              <p>
+                [<a href="JM_TrigonoFM/JM23_trigonoFM.pdf" target="_blank">pdf</a>]
+                <a href="https://github.com/RobinMagnet/Morpho_FMaps" target="_blank" style="color: black;">
+                  <i class="fa fa-github fa-xl" aria-hidden="true"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-10 col-10 mb-5">
+              <img src="EG_large_mesh/scalable_FM_thumbnail.jpg" class="img-thumbnail" style="scale:1.1" >
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-10 col-10">
+              <h6>Scalable and Efficient Functional Map Computations on Dense Meshes </h6>
+              <p>Robin Magnet, <a href="https://www.lix.polytechnique.fr/~maks/"> Maks Ovsjanikov</a><br />
+              <em>Proc. Eurographics, 2023</em> (<b>Oral</b>) <br />
+              </p>
+              <p>
+              </p>
+              <p>
+                [<a href="3DV2022_smooth_corres/scalable_FM_main.pdf" target="_blank">pdf</a>]
+                <a href="https://github.com/RobinMagnet/Scalable_FM" target="_blank" style="color: black;">
+                  <i class="fa fa-github fa-xl" aria-hidden="true"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-10 col-10 mb-5">
+              <img src="3DV2022_smooth_corres/smooth_corres_thumbnail.PNG" class="img-thumbnail" style="scale:1.1" >
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-10 col-10">
+              <h6>Smooth Non-Rigid Shape Matching via Effective Dirichlet Energy Optimization</h6>
+              <p>Robin Magnet, <a href="https://ren-jing.com/">Jing Ren</a>, <a href="https://igl.ethz.ch/people/sorkine/">Olga Sorkine-Hornung</a>, <a href="https://www.lix.polytechnique.fr/~maks/"> Maks Ovsjanikov</a><br />
+              <em>International Conference on 3D Vision (3DV), 2022</em> (<b>Oral</b>) <br />
+                <b>Best paper award</b>
+              </p>
+              <p>
+              </p>
+              <p>
+                [<a href="3DV2022_smooth_corres/smooth_corres_main.pdf" target="_blank">pdf</a>]
+                [<a href="3DV2022_smooth_corres/smooth_corres_suppl.pdf" target="_blank">supplementary</a>]
+                <a href="https://github.com/RobinMagnet/smoothFM" target="_blank" style="color: black;">
+                  <i class="fa fa-github fa-xl" aria-hidden="true"></i>
+                </a>
+                <a href="https://youtu.be/ipWwZjEKjRI" target="_blank" style="color: red;">
+                  <i class="fa-brands fa-youtube fa-xl"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-10 col-10 mb-5">
+              <img src="DWKS/thumbnail.png" class="img-thumbnail" style="scale:1.1" >
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-10 col-10">
+              <h6>DWKS : A Local Descriptor of Deformations Between Meshes and Point Clouds</h6>
+              <p>Robin Magnet, <a href="https://www.lix.polytechnique.fr/~maks/"> Maks Ovsjanikov</a><br />
+              <em>Proc. International Conference on Computer Vision (ICCV), 2021</em></p>
+              <p>
+              </p>
+              <p>
+                [<a href="DWKS/DWKS.pdf" target="_blank">pdf</a>]
+                [<a href="DWKS/DWKS_supplementary.pdf" target="_blank">supplementary</a>]
+                <a href="https://github.com/RobinMagnet/DWKS" target="_blank" style="color: black;">
+                  <i class="fa fa-github fa-xl" aria-hidden="true"></i>
+                </a>
+                <a href="https://youtu.be/cF_VuWAz3po" target="_blank" style="color: red;">
+                  <i class="fa-brands fa-youtube fa-xl"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="mt-5" />
+
+    <section id="code" class="mt-5">
+      <div class="row">
+        <div class="col pb-4"><h3>Code</h3></div>
+        <div class="col-lg-10 col-sm-12">
+          <div class="card-deck">
+            <div class="card border-light mb-3" style="max-width: 12rem;">
+              <div class="card-header pb-0">
+                <div class="col px-0">
+                  <div class="mb-2">
+                    <a href="https://github.com/RobinMagnet/pyFM" target="_blank" class="mb-1" style="text-decoration: none;">
+                      PyFM
+                    </a>
+                  </div>
+                  <div>
+                    <iframe
+                      src="https://ghbtns.com/github-btn.html?user=RobinMagnet&repo=pyFM&type=star&count=true" frameborder="0"
+                      scrolling="0"
+                      width="170"
+                      height="30"
+                      title="GitHub">
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body text-dark">
+                <p class="card-text">
+                  Python bindings for functional maps related computations.
+                </p>
+              </div>
+            </div>
+
+            <div class="card border-light mb-3" style="max-width: 12rem;">
+              <div class="card-header pb-0">
+                <div class="col px-0">
+                  <div class="mb-2">
+                    <a href="https://github.com/RobinMagnet/VisualizationTools" target="_blank" style="text-decoration: none;">
+                      VisualizationTools
+                    </a>
+                  </div>
+                  <div>
+                    <iframe
+                      src="https://ghbtns.com/github-btn.html?user=RobinMagnet&repo=VisualizationTools&type=star&count=true" frameborder="0"
+                      scrolling="0"
+                      width="170"
+                      height="30"
+                      title="GitHub">
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body text-dark">
+                <p class="card-text">
+                  Some python wrappers for easier visualization using the <a href="https://skoch9.github.io/meshplot/" target="_blank">meshplot</a> package
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <div class="card border-light mb-3" style="max-width: 12rem;">
+                <div class="card-header pb-0">
+                  <div class="col px-0">
+                    <div class="mb-2">
+                      <a href="https://github.com/RobinMagnet/SmoothFunctionalMaps" target="_blank" style="text-decoration: none;">
+                        SmoothFunctionalMaps
+                      </a>
+                    </div>
+                    <div>
+                      <iframe
+                        src="https://ghbtns.com/github-btn.html?user=RobinMagnet&repo=SmoothFunctionalMaps&type=star&count=true" frameborder="0"
+                        scrolling="0"
+                        width="170"
+                        height="30"
+                        title="GitHub">
+                      </iframe>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body text-dark">
+                  <p class="card-text">
+                    Python bindings for Discrete Optimization and Smooth Discrete Optimization.
+                  </p>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
