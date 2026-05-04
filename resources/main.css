@@ -239,6 +239,7 @@ section { padding-top: 4.5rem; }
   width: 100%;
   height: 112px;
   object-fit: contain;
+  background: #ffffff;
   border-radius: 6px;
   border: 1px solid var(--border);
   display: block;
