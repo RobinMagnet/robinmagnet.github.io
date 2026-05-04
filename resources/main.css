@@ -382,6 +382,45 @@ section { padding-top: 4.5rem; }
 }
 .back-link:hover { color: var(--accent); text-decoration: none; }
 
+/* ── Talks ──────────────────────────────────────────── */
+.talk {
+  display: flex;
+  gap: 1.75rem;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--border);
+  align-items: flex-start;
+}
+.talk:last-child { border-bottom: none; }
+.talk__date {
+  flex-shrink: 0;
+  width: 5rem;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.01em;
+  padding-top: 0.15rem;
+}
+.talk__body { flex: 1; min-width: 0; }
+.talk__title {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 0.15rem;
+}
+.talk__venue {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+}
+.talk__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.4rem;
+}
+
 /* ── Responsive ─────────────────────────────────────── */
 @media (max-width: 640px) {
   .main { padding: 0 1.25rem 4rem; }

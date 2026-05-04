@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Talks &mdash; Robin Magnet</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./resources/main.css?v=3" />
+  <script src="https://kit.fontawesome.com/612029af5a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!-- ─── Nav ─────────────────────────────────────────────── -->
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__brand">Robin Magnet</a>
+    <div class="nav__links">
+      <a href="index.html#bio">Bio</a>
+      <a href="news.html">News</a>
+      <a href="index.html#research">Publications</a>
+      <a href="index.html#code">Code</a>
+      <a href="talks.html">Talks</a>
+      <a href="./resources/CV.pdf" target="_blank">CV</a>
+      <button class="nav__theme" id="themeToggle" aria-label="Toggle dark mode">
+        <i class="fa-regular fa-moon" id="themeIcon"></i>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ─── Main ─────────────────────────────────────────────── -->
+<main class="main">
+
+  <div class="page-header">
+    <a href="index.html" class="back-link">
+      <i class="fa-solid fa-arrow-left" style="font-size:0.75rem"></i> Back
+    </a>
+    <h1>Talks</h1>
+  </div>
+
+  <div class="talk">
+    <span class="talk__date">Jul 2025</span>
+    <div class="talk__body">
+      <div class="talk__title">Robust Methods for Non-Rigid Spectral Shape Matching</div>
+      <div class="talk__venue">SGP Summer School 2025 &mdash; Bilbao, Spain</div>
+      <div class="talk__links">
+        <a href="https://www.youtube.com/watch?v=3j0WiG2yG48" target="_blank" class="pub__link">
+          <i class="fa-brands fa-youtube" style="font-size:0.75rem"></i> Video
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="talk">
+    <span class="talk__date">Jul 2025</span>
+    <div class="talk__body">
+      <div class="talk__title">Normalized Diffusion Kernels for Shape Analysis</div>
+      <div class="talk__venue">GDMM 2025 &mdash; Chamb&eacute;ry, France</div>
+    </div>
+  </div>
+
+  <div class="talk">
+    <span class="talk__date">Mar 2025</span>
+    <div class="talk__body">
+      <div class="talk__title"> Assessing Craniofacial Growth and Form Without Landmarks: A New Automatic Approach Based on Spectral Methods</div>
+      <div class="talk__venue">IABM 2025 &mdash; Nice, France</div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="footer">
+  Robin Magnet &mdash; Inria Paris
+</footer>
+
+<script>
+  // ── Dark / light mode ──────────────────────────────────
+  const html = document.documentElement;
+  const icon = document.getElementById('themeIcon');
+  const saved = localStorage.getItem('theme') || 'light';
+  html.setAttribute('data-theme', saved);
+  icon.className = saved === 'dark' ? 'fa-regular fa-sun' : 'fa-regular fa-moon';
+
+  document.getElementById('themeToggle').addEventListener('click', () => {
+    const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', next);
+    icon.className = next === 'dark' ? 'fa-regular fa-sun' : 'fa-regular fa-moon';
+    localStorage.setItem('theme', next);
+  });
+</script>
+</body>
+</html>
