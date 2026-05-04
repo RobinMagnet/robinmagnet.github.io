@@ -80,6 +80,21 @@
   <section id="news">
     <h2>News</h2>
     <div class="news-item">
+    <span class="news-date">April 2026</span>
+    <span class="news-text">Our paper on <em>Implicit Minimal Surfaces for Bijective Correspondences</em> with Etienne Corman, Yousuf Soliman, and Mark Gillespie has been accepted at SIGGRAPH 2026</span>
+  </div>
+
+  <div class="news-item">
+    <span class="news-date">April 2026</span>
+    <span class="news-text">Our paper on <em>Sinkhorn Normalization of Diffusion Kernels</em> with Nathan Kessler and Jean Feydy has been accepted at ICML 2026.</span>
+  </div>
+
+  <div class="news-item">
+    <span class="news-date">January 2026</span>
+    <span class="news-text">Our paper on <em>Unified Brain Surface and Volume Registration</em> has been accepted at ICLR 2026.</span>
+  </div>
+
+    <div class="news-item">
       <span class="news-date">Jul 2025</span>
       <span class="news-text">I gave a graduate school class at the <a href="https://school.geometryprocessing.org/summerschool-2025/" target="_blank">SGP Summer School 2025</a> in Bilbao on <em>Robust Methods for Non-Rigid Spectral Shape Matching</em>. Replay available <a href="https://www.youtube.com/watch?v=3j0WiG2yG48" target="_blank">here</a>.</span>
     </div>
@@ -91,14 +106,6 @@
       <span class="news-date">Jan 2025</span>
       <span class="news-text">I released a Python implementation of <a href="https://dl.acm.org/doi/10.1145/3202660" target="_blank">Reversible Harmonic Maps</a> &mdash; check it out <a href="https://github.com/RobinMagnet/ReversibleHarmonicMaps" target="_blank">here</a>.</span>
     </div>
-    <div class="news-item">
-      <span class="news-date">Oct 2024</span>
-      <span class="news-text">I started a postdoc at Inria Paris in the <a href="https://team.inria.fr/heka/" target="_blank">HeKA Team</a>.</span>
-    </div>
-    <div class="news-item">
-      <span class="news-date">Sep 2024</span>
-      <span class="news-text">I defended my <a href="PhD_thesis/PhD_Thesis.pdf" target="_blank">PhD thesis</a>!</span>
-    </div>
     <a href="news.html" class="news-more-link">All news <i class="fa-solid fa-arrow-right" style="font-size:0.75rem"></i></a>
   </section>
 
@@ -106,6 +113,69 @@
   <section id="research">
     <h2>Publications</h2>
     <div class="pub-list">
+
+      <!-- ICML 2026 -->
+      <div class="pub">
+        <div class="pub__thumb">
+          <img src="SIGGRAPH26_MinimalSurfaces/teaser.jpg" alt="SIGGRAPH 2026" />
+        </div>
+        <div class="pub__body">
+          <div class="pub__title">Implicit Minimal Surfaces for Bijective Correspondences</div>
+          <div class="pub__authors">
+            <a href="https://members.loria.fr/ECorman/" target="_blank">Etienne Corman</a>,
+            <a href="https://www.yousufsoliman.com/" target="_blank">Yousuf Soliman</a>,
+            <strong>Robin Magnet</strong>,
+            <a href="https://markjgillespie.com/" target="_blank">Mark Gillespie</a>,
+          </div>
+          <div class="pub__venue"><em>SIGGRAPH 2026</em></div>
+          <div class="pub__links">
+            <a href="ICML26_Kernels/main.pdf" class="pub__link" target="_blank">PDF</a>
+            <!-- <a href="ICML26_Kernels/main_compressed.pdf" class="pub__link" target="_blank">Compressed</a> -->
+            <!-- <a href="ICML26_Kernels/supp.pdf" class="pub__link" target="_blank">Supplementary</a> -->
+            <!-- <a href="https://github.com/RobinMagnet/SinkhornKernels" class="pub__link" target="_blank">Code</a> -->
+            <button class="bib-btn" onclick="toggleBib(this)">BibTeX</button>
+          </div>
+          <!-- <div class="bib-block"><pre>@inproceedings{corman,
+  title = {Sinkhorn Normalization of Diffusion Kernels},
+  booktitle = {2026 International Conference on Machine Learning (ICML)},
+  author = {Kessler, Nathan and Magnet, Robin and Feydy, Jean},
+  year = 2026,
+  publisher = {ICML},}
+</pre></div> -->
+        </div>
+      </div>
+
+
+      <!-- ICML 2026 -->
+      <div class="pub">
+        <div class="pub__thumb">
+          <img src="ICML26_Kernels/teaser.png" alt="ICML 2026" />
+        </div>
+        <div class="pub__body">
+          <div class="pub__title">Sinkhorn Normalization of Diffusion Kernels</div>
+          <div class="pub__authors">
+            <a href="https://nathankessler.github.io/" target="_blank">Nathan Kessler</a><sup>*</sup>,
+            <strong>Robin Magnet</strong><sup>*</sup>,
+            <a href="https://www.jeanfeydy.com/" target="_blank">Jean Feydy</a>
+          </div>
+          <div class="pub__venue"><em>ICML 2026</em> &middot; International Conference on Machine Learning</div>
+          <div class="pub__links">
+            <a href="ICML26_Kernels/main.pdf" class="pub__link" target="_blank">PDF</a>
+            <!-- <a href="ICML26_Kernels/main_compressed.pdf" class="pub__link" target="_blank">Compressed</a> -->
+            <!-- <a href="ICML26_Kernels/supp.pdf" class="pub__link" target="_blank">Supplementary</a> -->
+            <a href="https://github.com/RobinMagnet/SinkhornKernels" class="pub__link" target="_blank">Code</a>
+            <button class="bib-btn" onclick="toggleBib(this)">BibTeX</button>
+          </div>
+          <div class="bib-block"><pre>@inproceedings{kesslerSinkhornNormalizationDiffusion2026,
+  title = {Sinkhorn Normalization of Diffusion Kernels},
+  booktitle = {2026 International Conference on Machine Learning (ICML)},
+  author = {Kessler, Nathan and Magnet, Robin and Feydy, Jean},
+  year = 2026,
+  publisher = {ICML},}
+</pre></div>
+        </div>
+      </div>
+
 
       <!-- ICLR 2026 -->
       <div class="pub">
