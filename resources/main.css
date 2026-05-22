@@ -264,6 +264,11 @@ section { padding-top: 4.5rem; }
   margin-bottom: 0.55rem;
 }
 .pub__venue em { font-style: italic; }
+.news__award {
+  font-style: italic;
+  font-weight: 600;
+  color: var(--badge-text);
+}
 .pub__badge {
   display: inline-flex;
   align-items: center;
